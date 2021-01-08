@@ -1,0 +1,4 @@
+apiVersion: consulting.redhat.com/v1
+kind: VaultReplaceInline
+metadata:
+  name: vaultreplaceinline
