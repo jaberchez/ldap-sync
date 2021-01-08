@@ -1,5 +1,7 @@
 kind: LDAPSyncConfig
 apiVersion: v1
+metadata:
+  name: ldap-sync
 bindDN: "vault://cubbyhole/ldap-sync@bindUser"
 bindPassword: "vault://cubbyhole/ldap-sync@bindPassword"
 url: "url-testing"
