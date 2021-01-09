@@ -1,0 +1,18 @@
+kind: "ClusterRole"
+apiVersion: "v1"
+metadata:
+  name: "ldap-group-syncer"
+  namespace: "test-ldap"
+  labels:
+    template: "cronjob-ldap-group-sync"
+rules:
+  - apiGroups:
+      - ""
+      - "user.openshift.io"
+    resources:
+      - "groups"
+    verbs:
+      - "get"
+      - "list"
+      - "create"
+      - "update"
