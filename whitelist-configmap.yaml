@@ -1,0 +1,11 @@
+kind: ConfigMap
+metadata:
+  name: ldap-groups
+  namespace: test-ldap
+apiVersion: v1
+data:
+  whitelist.txt: |
+    cn=OpenShift_Admin,ou=groups,dc=example,dc=corp
+    cn=OpenShift_Dev,ou=groups,dc=example,dc=corp
+    cn=OpenShift_Oper,ou=groups,dc=example,dc=corp
+    cn=OpenShift_Viewers,ou=groups,dc=example,dc=corp
