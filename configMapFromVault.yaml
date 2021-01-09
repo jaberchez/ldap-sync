@@ -2,4 +2,4 @@ apiVersion: consulting.redhat.com/v1
 kind: ConfigMapFromVault
 metadata:
   name: configmapfromvault
-argsOneLiner: ldap-cm ldap-sync ldap-sync-config.yml
+argsOneLiner: ldap-cm test-ldap ldap-sync-config.yml
