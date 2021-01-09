@@ -6,3 +6,4 @@ resources:
   - whitelist-configmap.yaml
   - clusterrole.yaml
   - service-account.yaml
+  - clusterrolebinding-yaml
