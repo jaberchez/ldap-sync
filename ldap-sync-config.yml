@@ -1,0 +1,25 @@
+kind: LDAPSyncConfig
+apiVersion: v1
+bindDN: "vault://cubbyhole/ldap-sync@bindDN"
+bindPassword: "vault://cubbyhole/ldap-sync@bindPassword"
+url: "vault://cubbyhole/ldap-sync@ldapURL"
+insecure: true
+rfc2307:
+  groupsQuery:
+    baseDN: "vault://cubbyhole/ldap-sync@queryBaseDNGroups"
+    scope: sub
+    derefAliases: never
+    pageSize: 0
+    filter: "vault://cubbyhole/ldap-sync@ldapFilter"
+  groupUIDAttribute: cn
+  groupNameAttributes: [ cn ]
+  groupMembershipAttributes: [ member ]
+  usersQuery:
+    baseDN: "vault://cubbyhole/ldap-sync@queryBaseDNUsers"
+    scope: sub
+    derefAliases: never
+    pageSize: 0
+  userUIDAttribute: dn
+  userNameAttributes: [ corpAliasLocal ]
+  tolerateMemberNotFoundErrors: true
+  tolerateMemberOutOfScopeErrors: false
