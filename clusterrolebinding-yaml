@@ -1,0 +1,12 @@
+kind: "ClusterRoleBinding"
+apiVersion: "rbac.authorization.k8s.io/v1"
+groupNames: null
+metadata:
+  name: "system:ldap-group-syncers"
+roleRef:
+  name: "ldap-group-syncer"
+subjects:
+- kind: "ServiceAccount"
+  name: "ldap-group-syncer"
+userNames:
+- "system:serviceaccount:test-ldap:ldap-group-syncer"
