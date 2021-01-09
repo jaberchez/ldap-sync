@@ -1,5 +1,5 @@
 apiVersion: consulting.redhat.com/v1
-kind: VaultReplaceInline
+kind: ConfigMapFromVault
 metadata:
-  name: vaultreplaceinline
-argsOneLiner: "*.tpl"
+  name: configmapfromvault
+argsOneLiner: ldap-cm ldap-sync ldap-sync-config.yml
