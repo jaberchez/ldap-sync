@@ -8,8 +8,8 @@ metadata:
 spec:
   schedule: "@hourly"
   concurrencyPolicy: "Forbid"
-  successfulJobsHistoryLimit: "5"
-  failedJobsHistoryLimit: "5"
+  successfulJobsHistoryLimit: 5
+  failedJobsHistoryLimit: 5
   jobTemplate:
     spec:
       backoffLimit: 0
