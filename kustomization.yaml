@@ -8,3 +8,4 @@ resources:
   - clusterrole.yaml
   - service-account.yaml
   - clusterrolebinding-yaml
+  - cronjob-ldap-sync.yaml
