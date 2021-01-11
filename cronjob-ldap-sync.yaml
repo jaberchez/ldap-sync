@@ -2,7 +2,7 @@ kind: CronJob
 apiVersion: "batch/v1beta1"
 metadata:
   name: "cronjob-ldap-group-sync"
-  namespace: "ldap-sync"
+  namespace: "test-ldap"
   labels:
     template: "cronjob-ldap-group-sync"
 spec:
